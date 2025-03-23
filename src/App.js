@@ -23,6 +23,8 @@ export default function ChatApp() {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
   const [rooms, setRooms] = useState([]);
+  const [username, setUsername] = useState(localStorage.getItem("username") || "");
+  const [usernameSet, setUsernameSet] = useState(!!username);
 
   useEffect(() => {
     const fetchRooms = async () => {
@@ -54,15 +56,32 @@ export default function ChatApp() {
 
   const sendMessage = async () => {
     if (roomCode && message.trim()) {
-      await setDoc(doc(db, roomCode, new Date().getTime().toString()), { text: message, timestamp: new Date().getTime(), user: "User" });
+      await setDoc(doc(db, roomCode, new Date().getTime().toString()), { text: message, timestamp: new Date().getTime(), user: username });
       setMessage("");
+    }
+  };
+
+  const setUser = () => {
+    if (username.trim()) {
+      localStorage.setItem("username", username);
+      setUsernameSet(true);
     }
   };
 
   return (
     <div className="container mt-4">
       <h1 className="text-center mb-4">Group Chat</h1>
-      {!roomCode ? (
+      {!usernameSet ? (
+        <div className="card p-4 shadow-sm">
+          <input 
+            className="form-control mb-2" 
+            placeholder="Enter a username" 
+            value={username} 
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <button onClick={setUser} className="btn btn-primary w-100">Set Username</button>
+        </div>
+      ) : !roomCode ? (
         <div className="card p-4 shadow-sm">
           <input 
             className="form-control mb-2" 
@@ -88,8 +107,10 @@ export default function ChatApp() {
             {messages.map((msg, index) => (
               <div 
                 key={index} 
-                className={`d-flex ${msg.user === "User" ? 'justify-content-start' : 'justify-content-end'}`}>
-                <div className={`alert ${msg.user === "User" ? 'alert-primary' : 'alert-secondary'} text-wrap`}>{msg.text}</div>
+                className={`d-flex ${msg.user === username ? 'justify-content-start' : 'justify-content-end'}`}>
+                <div className={`alert ${msg.user === username ? 'alert-primary' : 'alert-secondary'} text-wrap`}> 
+                  <strong>{msg.user}: </strong> {msg.text}
+                </div>
               </div>
             ))}
           </div>
