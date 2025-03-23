@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/group-chat-app/static/css/main.2617b78f.chunk.css",
-    "main.js": "/group-chat-app/static/js/main.7068d2b9.chunk.js",
-    "main.js.map": "/group-chat-app/static/js/main.7068d2b9.chunk.js.map",
-    "runtime~main.js": "/group-chat-app/static/js/runtime~main.4c269fde.js",
-    "runtime~main.js.map": "/group-chat-app/static/js/runtime~main.4c269fde.js.map",
-    "static/js/2.57fa78e1.chunk.js": "/group-chat-app/static/js/2.57fa78e1.chunk.js",
-    "static/js/2.57fa78e1.chunk.js.map": "/group-chat-app/static/js/2.57fa78e1.chunk.js.map",
-    "static/js/3.1af95c37.chunk.js": "/group-chat-app/static/js/3.1af95c37.chunk.js",
-    "static/js/3.1af95c37.chunk.js.map": "/group-chat-app/static/js/3.1af95c37.chunk.js.map",
+    "main.js": "/group-chat-app/static/js/main.e3d584a5.chunk.js",
+    "main.js.map": "/group-chat-app/static/js/main.e3d584a5.chunk.js.map",
+    "runtime~main.js": "/group-chat-app/static/js/runtime~main.867a4e47.js",
+    "runtime~main.js.map": "/group-chat-app/static/js/runtime~main.867a4e47.js.map",
+    "static/css/2.b71989ea.chunk.css": "/group-chat-app/static/css/2.b71989ea.chunk.css",
+    "static/js/2.e4b93a46.chunk.js": "/group-chat-app/static/js/2.e4b93a46.chunk.js",
+    "static/js/2.e4b93a46.chunk.js.map": "/group-chat-app/static/js/2.e4b93a46.chunk.js.map",
+    "static/js/3.c60c86f6.chunk.js": "/group-chat-app/static/js/3.c60c86f6.chunk.js",
+    "static/js/3.c60c86f6.chunk.js.map": "/group-chat-app/static/js/3.c60c86f6.chunk.js.map",
     "index.html": "/group-chat-app/index.html",
-    "precache-manifest.40ea78e174400032d8995b13b0cda707.js": "/group-chat-app/precache-manifest.40ea78e174400032d8995b13b0cda707.js",
+    "precache-manifest.ea034f84e9c75950a5e9f65062b93215.js": "/group-chat-app/precache-manifest.ea034f84e9c75950a5e9f65062b93215.js",
     "service-worker.js": "/group-chat-app/service-worker.js",
+    "static/css/2.b71989ea.chunk.css.map": "/group-chat-app/static/css/2.b71989ea.chunk.css.map",
     "static/css/main.2617b78f.chunk.css.map": "/group-chat-app/static/css/main.2617b78f.chunk.css.map"
   }
 }
