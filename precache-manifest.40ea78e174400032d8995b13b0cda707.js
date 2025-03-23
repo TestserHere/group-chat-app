@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b5214d25d27a3460a4c93a88c876783f",
+    "revision": "2bcfe52d14567b33f5ef95800705b1f0",
     "url": "/group-chat-app/index.html"
   },
   {
-    "revision": "8ab7e50cbd373318506b",
+    "revision": "a4e18e4da35d0c5ab26e",
     "url": "/group-chat-app/static/css/main.2617b78f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/group-chat-app/static/js/3.1af95c37.chunk.js"
   },
   {
-    "revision": "8ab7e50cbd373318506b",
-    "url": "/group-chat-app/static/js/main.10519232.chunk.js"
+    "revision": "a4e18e4da35d0c5ab26e",
+    "url": "/group-chat-app/static/js/main.7068d2b9.chunk.js"
   },
   {
     "revision": "d5d548a96361f54699cd",
