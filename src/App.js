@@ -4,14 +4,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, setDoc, onSnapshot, query, orderBy, getDocs, doc } from "firebase/firestore";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAThnPos7CBAUo9KU00soMwOgx0vFXVmL8",
+const firebaseConfig = { 
+  apiKey: "AIzaSyAThnPos7CBAUo9KU00soMwOgx0vFXVmL8", 
   authDomain: "groupchatapp-12918.firebaseapp.com",
   projectId: "groupchatapp-12918",
   storageBucket: "groupchatapp-12918.firebasestorage.app",
-  messagingSenderId: "312169425350",
-  appId: "1:312169425350:web:26dca269b31fbb407baac7",
-  measurementId: "G-7XDHBHSCZD"
+  messagingSenderId: "312169425350", 
+  appId:"1:312169425350:web:26dca269b31fbb407baac7",
+  measurementId: "G-7XDHBHSCZD" 
 };
 
 const app = initializeApp(firebaseConfig);
@@ -24,7 +24,7 @@ export default function ChatApp() {
   const [messages, setMessages] = useState([]);
   const [rooms, setRooms] = useState([]);
   const [username, setUsername] = useState(localStorage.getItem("username") || "");
-  const [usernameSet, setUsernameSet] = useState(!!username);
+  const [usernameSet, setUsernameSet] = useState(!!localStorage.getItem("username"));
 
   useEffect(() => {
     const fetchRooms = async () => {
@@ -61,10 +61,16 @@ export default function ChatApp() {
     }
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      sendMessage();
+    }
+  };
+
   const setUser = () => {
     if (username.trim()) {
       localStorage.setItem("username", username);
-      setUsernameSet(true);
+      setTimeout(() => setUsernameSet(true), 100); 
     }
   };
 
@@ -107,7 +113,7 @@ export default function ChatApp() {
             {messages.map((msg, index) => (
               <div 
                 key={index} 
-                className={`d-flex ${msg.user === username ? 'justify-content-start' : 'justify-content-end'}`}>
+                className={`d-flex ${msg.user === username ? 'justify-content-end' : 'justify-content-start'}`}>
                 <div className={`alert ${msg.user === username ? 'alert-primary' : 'alert-secondary'} text-wrap`}> 
                   <strong>{msg.user}: </strong> {msg.text}
                 </div>
@@ -120,6 +126,7 @@ export default function ChatApp() {
               placeholder="Type a message" 
               value={message} 
               onChange={(e) => setMessage(e.target.value)}
+              onKeyPress={handleKeyPress}
             />
             <button onClick={sendMessage} className="btn btn-success">Send</button>
           </div>
