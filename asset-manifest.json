@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/group-chat-app/static/css/main.2617b78f.chunk.css",
-    "main.js": "/group-chat-app/static/js/main.63b8bf19.chunk.js",
-    "main.js.map": "/group-chat-app/static/js/main.63b8bf19.chunk.js.map",
+    "main.js": "/group-chat-app/static/js/main.aae4b309.chunk.js",
+    "main.js.map": "/group-chat-app/static/js/main.aae4b309.chunk.js.map",
     "runtime~main.js": "/group-chat-app/static/js/runtime~main.4c269fde.js",
     "runtime~main.js.map": "/group-chat-app/static/js/runtime~main.4c269fde.js.map",
     "static/css/2.b71989ea.chunk.css": "/group-chat-app/static/css/2.b71989ea.chunk.css",
-    "static/js/2.40243a17.chunk.js": "/group-chat-app/static/js/2.40243a17.chunk.js",
-    "static/js/2.40243a17.chunk.js.map": "/group-chat-app/static/js/2.40243a17.chunk.js.map",
+    "static/js/2.4f2017f6.chunk.js": "/group-chat-app/static/js/2.4f2017f6.chunk.js",
+    "static/js/2.4f2017f6.chunk.js.map": "/group-chat-app/static/js/2.4f2017f6.chunk.js.map",
     "static/js/3.1af95c37.chunk.js": "/group-chat-app/static/js/3.1af95c37.chunk.js",
     "static/js/3.1af95c37.chunk.js.map": "/group-chat-app/static/js/3.1af95c37.chunk.js.map",
     "index.html": "/group-chat-app/index.html",
-    "precache-manifest.3601942fd5ba6a6ef1512242d034a2c9.js": "/group-chat-app/precache-manifest.3601942fd5ba6a6ef1512242d034a2c9.js",
+    "precache-manifest.e6f027ba6f8a5dd038ee8aa3bb2cff11.js": "/group-chat-app/precache-manifest.e6f027ba6f8a5dd038ee8aa3bb2cff11.js",
     "service-worker.js": "/group-chat-app/service-worker.js",
     "static/css/2.b71989ea.chunk.css.map": "/group-chat-app/static/css/2.b71989ea.chunk.css.map",
     "static/css/main.2617b78f.chunk.css.map": "/group-chat-app/static/css/main.2617b78f.chunk.css.map"
