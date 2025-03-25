@@ -134,13 +134,11 @@ export default function ChatApp() {
                 onMouseEnter={(e) => e.currentTarget.querySelector(".msg-options").style.display = "block"}
                 onMouseLeave={(e) => e.currentTarget.querySelector(".msg-options").style.display = "none"}
               >
-                <div className="msg-options me-2" style={{ display: "none" }}>
-                  {msg.user === username && (
-                    <>
-                      <button className="btn btn-sm btn-danger me-1" onClick={() => deleteMessage(msg.id, msg.user)}><FaTrash /></button>
-                    </>
-                  )}
-                </div>
+                {msg.user === username && (
+                  <div className="msg-options me-2" style={{ display: "none" }}>
+                    <button className="btn btn-sm btn-danger me-1" onClick={() => deleteMessage(msg.id, msg.user)}><FaTrash /></button>
+                  </div>
+                )}
                 <div className={`p-3 text-white ${msg.user === username ? 'bg-primary' : 'bg-secondary'}`} 
                   style={{ maxWidth: "75%", borderRadius: "20px", padding: "10px 15px" }}>
                   {msg.user}: {msg.text}
